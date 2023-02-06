@@ -12,6 +12,10 @@ namespace SnakeAndLadderProblem
         {
             int initialPos = 0;
             Console.WriteLine("Player is at " + initialPos);
+
+            Random random = new Random();
+            int rollDice = random.Next(1, 7);
+            Console.WriteLine("The Roll dice is " + rollDice);
         }
     }
 }
