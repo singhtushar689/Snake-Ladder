@@ -22,7 +22,10 @@ namespace SnakeAndLadderProblem
                 {
                     case ladder:
                         Console.WriteLine("Ladder");
-                        position += rollDice;
+                        if(position + rollDice <= 100)
+                        {
+                            position += rollDice;
+                        }
                         break;
                     case snake:
                         Console.WriteLine("Snake");
