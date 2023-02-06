@@ -11,7 +11,7 @@ namespace SnakeAndLadderProblem
         public void Game()
         {
             const int snake = 2; const int ladder = 1; const int win = 100;
-            int position = 0;
+            int position = 0;int diceCount=0;
             while (position < win)
             {
                 Random random = new Random();
@@ -40,9 +40,12 @@ namespace SnakeAndLadderProblem
                         break;
                     default:
                         break;
+                        
                 }
+                diceCount++;
                 Console.WriteLine("Value of Dice is " + rollDice);
                 Console.WriteLine("Player is at " + position);
+                Console.WriteLine("Total times dice rolled is " + diceCount);
             }
         }
     }
